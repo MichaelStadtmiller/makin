@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<h1>Daily Training Plan</h1>
+    <form action="/action_page.php">
+        Title: <br>
+        <input type="text" name="Title" value="">
+        <br><br>
+        Choose Date: <br>
+        <input type="date" name="date" value="">
+        <br><br>
+        Start Time: <br>
+        <input type="time" name="starttime" value="">
+        <br><br>
+       End Time: <br>
+        <input type="time" name="endtime" value="">
+        <br><br>
+        Location: <br>
+        <input type="text" name="location" value="">
+        <br><br>
+        <input type="submit" value="Create Practice">
+
+    </form>
+
+    <form action="/action_page.php">
+    <h2>Create Set</h2>
+        Set Type:
+            <select name="Set Type">
+                <option value="0" selected=""disabled>Set Type
+                <option value="1">Warm-Up</option>
+                <option value="2">Drill</option>
+                <option value="3">Kick</option>
+                <option value="4">Main</option>
+                <option value="5">Specialty</option>
+                <option value="6">Cool-Down</option>
+                <option value="7">Other</option>
+            </select>
+        <br><br>
+        Apply to Lanes:<br>
+        <form action="/action_page.php" method="get">
+            <input type="checkbox" name="Lane" value="Lane1"> Lane 1
+            <input type="checkbox" name="Lane" value="Lane2"> Lane 2
+            <input type="checkbox" name="Lane" value="Lane3"> Lane 3<br>
+            <input type="checkbox" name="Lane" value="Lane4"> Lane 4
+            <input type="checkbox" name="Lane" value=lane5"> Lane 5
+            <input type="checkbox" name="Lane" value=lane6"> Lane 6<br>
+            <input type="checkbox" name="Lane" value=lane7"> Lane 7
+            <input type="checkbox" name="Lane" value=lane8"> Lane 8
+            <input type="checkbox" name="Lane" value=lane9"> Lane 9<br>
+
+</form>
+        <input type="submit" value="Add Set">
+
+        <h2>Create Swim</h2>
+
+         Apply to Lanes:<br>
+        <form action="/action_page.php" method="get">
+            <input type="checkbox" name="Lane" value="Lane1"> Lane 1
+            <input type="checkbox" name="Lane" value="Lane2"> Lane 2
+            <input type="checkbox" name="Lane" value="Lane3"> Lane 3<br>
+            <input type="checkbox" name="Lane" value="Lane4"> Lane 4
+            <input type="checkbox" name="Lane" value=lane5"> Lane 5
+            <input type="checkbox" name="Lane" value=lane6"> Lane 6<br>
+            <input type="checkbox" name="Lane" value=lane7"> Lane 7
+            <input type="checkbox" name="Lane" value=lane8"> Lane 8
+            <input type="checkbox" name="Lane" value=lane9"> Lane 9<br>
+<br>
+            Apply to Set:
+            <select name="Set">
+                <option value="1">Warm-Up</option>
+                <option value="2">Drill</option>
+                <option value="3">Kick</option>
+                <option value="4">Main</option>
+                <option value="5">Specialty</option>
+                <option value="6">Cool-Down</option>
+                <option value="7">Other</option>
+                </select><br>
+            <br>
+            Stroke:
+            <select name="Stroke">
+                <option value="0">Freestyle</option>
+                <option value="1">Backstroke</option>
+                <option value="2">Breastroke</option>
+                <option value="3">Buttefly</option>
+                <option value="4">Medley</option>
+                <option value="5">Choice</option>
+            </select>
+        <br><br>
+        Repetitions:
+            <input type="number" name="Repetitions" min="1" max="50" step="1">
+        <br><br>
+        Distance:
+            <input type="number" name="Distance" min="25" max="1000" step="25">
+        <br><br>
+        Cyle Type:
+        <select name="Cycle Type">
+            <option value="0">Cycle</option>
+            <option value="1">Rest</option>
+        </select>
+        Minutes:
+        <input type="number" min="0" max="59">
+        Seconds:
+        <input type="number" min="0" max="59" step="5">
+        <br><br>
+        Notes:
+            <input type="text" name="Notes">
+        <br><br>
+
+        <input type="submit" value="Add Swim"<br><br>
+ </form>
+
+<style>
+    table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+</style>
+
+
+<h1>title</h1>
+            <table style="width:100%">
+            <tr>
+                <th>Set Type</th>
+                <th>Lane 1</th>
+                <th>Lane 2</th>
+                <th>Lane 3</th>
+                <th>Lane 4</th>
+                <th>Lane 5</th>
+                <th>Lane 6</th>
+                <th>Lane 7</th>
+                <th>Lane 8</th>
+                <th>Lane 9</th>
+            <tr>
+                <th>Warm-Up</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+
+            </tr>
+            <tr>
+                <th>Drill</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Kick</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Main</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Specialty</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Cool-Down</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </table>
+
+
+
+
+
+
+
+
+   {% endblock %}
