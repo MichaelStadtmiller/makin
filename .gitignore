@@ -11,7 +11,7 @@ __pycache__/
 
 # visual studio
 .vs
-
+.vscode/
 # sqlite
 db.sqlite3
 

@@ -2,8 +2,8 @@
 {% load staticfiles %}
 {% block content %}
 
-
-<h1>Daily Training Plan</h1>
+<div class="col-xs-12 col-sm-6"></div>
+    <h1>Daily Training Plan</h1>
     <form action="/action_page.php">
         Title: <br>
         <input type="text" name="Title" value="">
@@ -14,14 +14,13 @@
         Start Time: <br>
         <input type="time" name="starttime" value="">
         <br><br>
-       End Time: <br>
+        End Time: <br>
         <input type="time" name="endtime" value="">
         <br><br>
         Location: <br>
         <input type="text" name="location" value="">
         <br><br>
         <input type="submit" value="Create Practice">
-
     </form>
 
     <form action="/action_page.php">
@@ -44,29 +43,26 @@
             <input type="checkbox" name="Lane" value="Lane2"> Lane 2
             <input type="checkbox" name="Lane" value="Lane3"> Lane 3<br>
             <input type="checkbox" name="Lane" value="Lane4"> Lane 4
-            <input type="checkbox" name="Lane" value=lane5"> Lane 5
-            <input type="checkbox" name="Lane" value=lane6"> Lane 6<br>
-            <input type="checkbox" name="Lane" value=lane7"> Lane 7
-            <input type="checkbox" name="Lane" value=lane8"> Lane 8
-            <input type="checkbox" name="Lane" value=lane9"> Lane 9<br>
-
-</form>
+            <input type="checkbox" name="Lane" value="Lane5"> Lane 5
+            <input type="checkbox" name="Lane" value="Lane6"> Lane 6<br>
+            <input type="checkbox" name="Lane" value="Lane7"> Lane 7
+            <input type="checkbox" name="Lane" value="Lane8"> Lane 8
+            <input type="checkbox" name="Lane" value="Lane9"> Lane 9<br>
+        </form>
         <input type="submit" value="Add Set">
-
         <h2>Create Swim</h2>
-
-         Apply to Lanes:<br>
+        Apply to Lanes:<br>
         <form action="/action_page.php" method="get">
             <input type="checkbox" name="Lane" value="Lane1"> Lane 1
             <input type="checkbox" name="Lane" value="Lane2"> Lane 2
             <input type="checkbox" name="Lane" value="Lane3"> Lane 3<br>
             <input type="checkbox" name="Lane" value="Lane4"> Lane 4
-            <input type="checkbox" name="Lane" value=lane5"> Lane 5
-            <input type="checkbox" name="Lane" value=lane6"> Lane 6<br>
-            <input type="checkbox" name="Lane" value=lane7"> Lane 7
-            <input type="checkbox" name="Lane" value=lane8"> Lane 8
-            <input type="checkbox" name="Lane" value=lane9"> Lane 9<br>
-<br>
+            <input type="checkbox" name="Lane" value="Lane5"> Lane 5
+            <input type="checkbox" name="Lane" value="Lane6"> Lane 6<br>
+            <input type="checkbox" name="Lane" value="Lane7"> Lane 7
+            <input type="checkbox" name="Lane" value="Lane8"> Lane 8
+            <input type="checkbox" name="Lane" value="Lane9"> Lane 9<br>
+            <br>
             Apply to Set:
             <select name="Set">
                 <option value="1">Warm-Up</option>
@@ -107,12 +103,10 @@
         Notes:
             <input type="text" name="Notes">
         <br><br>
-
         <input type="submit" value="Add Swim"<br><br>
  </form>
-
 <style>
-    table, th, td {
+table, th, td {
     border: 1px solid black;
 }
 th, td {
@@ -121,100 +115,93 @@ th, td {
 }
 </style>
 
-
 <h1>title</h1>
-            <table style="width:100%">
-            <tr>
-                <th>Set Type</th>
-                <th>Lane 1</th>
-                <th>Lane 2</th>
-                <th>Lane 3</th>
-                <th>Lane 4</th>
-                <th>Lane 5</th>
-                <th>Lane 6</th>
-                <th>Lane 7</th>
-                <th>Lane 8</th>
-                <th>Lane 9</th>
-            <tr>
-                <th>Warm-Up</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+<table style="width:100%">
+    <tr>
+        <th>Set Type</th>
+        <th>Lane 1</th>
+        <th>Lane 2</th>
+        <th>Lane 3</th>
+        <th>Lane 4</th>
+        <th>Lane 5</th>
+        <th>Lane 6</th>
+        <th>Lane 7</th>
+        <th>Lane 8</th>
+        <th>Lane 9</th>
+    <tr>
+        <th>Warm-Up</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
 
-            </tr>
-            <tr>
-                <th>Drill</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Kick</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Main</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Specialty</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Cool-Down</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            </table>
+    </tr>
+    <tr>
+        <th>Drill</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>Kick</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>Main</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>Specialty</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>Cool-Down</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+</div>
 
-
-
-
-
-
-
-
-   {% endblock %}
+{% endblock %}
